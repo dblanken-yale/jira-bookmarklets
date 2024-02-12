@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bookmarklet</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <a href='javascript:(()=>{const templates={Bug:`# Hi from Dave`};const issueType=document.evaluate(&#39;//*[@id="issue-create.ui.modal.create-form.type-picker.issue-type-select"]/div/div[1]/div[1]/div/div[2]/div&#39;,document,null,XPathResult.FIRST_ORDERED_NODE_TYPE,null).singleNodeValue.innerText;if(issueType in templates){const descriptionBox=document.evaluate(&#39;//*[@id="ak-editor-textarea"]/p&#39;,document,null,XPathResult.FIRST_ORDERED_NODE_TYPE,null).singleNodeValue;descriptionBox.innerText=templates[issueType]}})();'>Bookmarklet</a> 
+    </body>
+</html>
